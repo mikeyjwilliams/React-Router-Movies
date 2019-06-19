@@ -25,7 +25,7 @@ export default class App extends Component {
         <div>Replace this Div with your Routes</div>
 
         <Route exact to='/' component={MovieList} />
-        <Route exact to='/movies/:id' component={}
+        <Route exact to='/movies/:id' component={Movie} />
       </div>
     );
   }
