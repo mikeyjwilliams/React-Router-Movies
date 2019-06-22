@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import MovieCard from './MovieCard';
 
 export default class MovieList extends Component {
@@ -36,6 +36,5 @@ export default class MovieList extends Component {
 }
 
 function MovieDetails({ movie }) {
-  const { title, director, metascore, stars } = movie;
   return <MovieCard {...movie} />;
 }
